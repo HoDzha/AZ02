@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 students = [f"Студент {i+1}" for i in range(10)]
 # Предметы
 subjects = ["Математика", "Русский", "История", "Философия", "ОБЖД"]
-# Генерация случайных оценок от 1 до 100 для каждого ученика по каждому предмету
+# Генерация случайных оценок от 2 до 5 для каждого ученика по каждому предмету
 grades = np.random.randint(2, 6, size=(10, 5))
 # Создание DataFrame
 df = pd.DataFrame(data=grades, index=students, columns=subjects)
