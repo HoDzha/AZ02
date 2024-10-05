@@ -13,7 +13,7 @@ df = pd.DataFrame(data=grades, index=students, columns=subjects)
 print(df.head())
 
 #print(df.describe())
-# Можно было бы оставить .describe(), но в задании просят по кавывести по каждому предмету.
+# Можно было бы оставить .describe(), но ..
 for subject in subjects:
     print('Средняя оценка по предмету ', subject, ': ', df[subject].mean())
     print('Медиана оценки по предмету ', subject, ': ', df[subject].median())
